@@ -21,9 +21,11 @@ public:
 
     void printString();
 
+    void addStringByLiuPeng(const char *StringByLiuPeng);
+
 private:
 
-    char *str;
+    char *str_;
 
 };
 
