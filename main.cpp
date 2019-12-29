@@ -1,9 +1,12 @@
 #include <iostream>
 #include "StringByLiuPeng/StringByLiuPeng.h"
-#include "Function/AboutStrlen.h"
+#include "Function/strlen/AboutStrlen.h"
+#include "Function/memset/AboutMemset.h"
 
 int main() {
 
+    palyInStrlen();
+    testForinit();
     std::cout << "Hello, World!" << std::endl;
     StringByLiuPeng * stringByLiuPeng;
     char *ch = "ghj765k";

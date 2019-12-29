@@ -3,4 +3,6 @@ project(CPlusPlusSTLByLiupeng)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CPlusPlusSTLByLiupeng main.cpp StringByLiuPeng/StringByLiuPeng.cpp StringByLiuPeng/StringByLiuPeng.h Function/AboutStrlen.cpp Function/AboutStrlen.h)
+
+
+add_executable(CPlusPlusSTLByLiupeng main.cpp StringByLiuPeng/StringByLiuPeng.cpp StringByLiuPeng/StringByLiuPeng.h Function/strlen/AboutStrlen.cpp Function/strlen/AboutStrlen.h Function/memset/AboutMemset.cpp Function/memset/AboutMemset.h)
