@@ -5,6 +5,7 @@
 #ifndef CPLUSPLUSSTLBYLIUPENG_STRINGBYLIUPENG_H
 #define CPLUSPLUSSTLBYLIUPENG_STRINGBYLIUPENG_H
 
+#include <iostream>
 
 class StringByLiuPeng {
 
@@ -35,6 +36,11 @@ public:
     StringByLiuPeng &operator=(char *str);
 
     StringByLiuPeng &operator=(const StringByLiuPeng &stringByLiuPeng);
+
+
+    friend std::ostream& operator<<(std::ostream& out, const StringByLiuPeng &stringByLiuPeng);
+
+    friend std::istream& operator>>(std::istream& in, StringByLiuPeng &stringByLiuPeng);
 
     /*String& operator=(char *str);
     String& operator=(const String& other);

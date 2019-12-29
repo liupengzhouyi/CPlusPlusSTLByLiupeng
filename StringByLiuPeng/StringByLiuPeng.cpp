@@ -77,3 +77,19 @@ StringByLiuPeng &StringByLiuPeng::operator=(const StringByLiuPeng &stringByLiuPe
         return *this;
     }
 }
+
+std::ostream &operator<<(std::ostream &out, const StringByLiuPeng &stringByLiuPeng) {
+    out << stringByLiuPeng.str_;
+    return out;
+
+}
+
+std::istream &operator>>(std::istream &in, StringByLiuPeng &stringByLiuPeng) {
+    char buffer[4096];
+    in >> buffer;
+    int len = strlen(buffer)+1;
+    stringByLiuPeng.str_ = new char[len];
+    memset(stringByLiuPeng.str_, 0, len);
+    strcpy(stringByLiuPeng.str_, buffer);
+    return in;
+}

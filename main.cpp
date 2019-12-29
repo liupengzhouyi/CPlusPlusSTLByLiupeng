@@ -25,7 +25,7 @@ int main() {
     std::cout << s << std::endl;*/
 
     StringByLiuPeng stringByLiuPeng1("h123");
-    //std::cout << stringByLiuPeng1.returnself() << std::endl;
+    std::cout << stringByLiuPeng1 << std::endl;
 
     return 0;
 }
