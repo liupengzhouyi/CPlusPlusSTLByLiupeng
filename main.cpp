@@ -21,7 +21,11 @@ int main() {
 
     stringByLiuPeng->printString();
 
-    std::cout << stringByLiuPeng << std::endl;
+    /*std::string s("as");
+    std::cout << s << std::endl;*/
+
+    StringByLiuPeng stringByLiuPeng1("h123");
+    //std::cout << stringByLiuPeng1.returnself() << std::endl;
 
     return 0;
 }

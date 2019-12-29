@@ -51,3 +51,29 @@ void StringByLiuPeng::addStringByLiuPeng(const char *stringByLiuPeng) {
     strcpy(this->str_, newptr);
     strcat(this->str_, stringByLiuPeng);
 }
+
+StringByLiuPeng StringByLiuPeng::returnself() {
+    return this->str_;
+}
+
+StringByLiuPeng &StringByLiuPeng::operator=(char *str) {
+    delete [] this->str_;
+    int len = strlen(str) + 1;
+    this->str_ = new char[len];
+    memset(this->str_, 0, len);
+    strcpy(this->str_, str);
+    return *this;
+}
+
+StringByLiuPeng &StringByLiuPeng::operator=(const StringByLiuPeng &stringByLiuPeng) {
+    if(this == &stringByLiuPeng){
+        return *this;
+    } else {
+        int len = strlen(stringByLiuPeng.str_) + 1;
+        delete[] this->str_;
+        this->str_ = new char[len];
+        memset(this->str_, 0, len);
+        strcpy(str_, stringByLiuPeng.str_);
+        return *this;
+    }
+}
