@@ -37,27 +37,18 @@ public:
 
     StringByLiuPeng &operator=(const StringByLiuPeng &stringByLiuPeng);
 
+    char& operator[](unsigned int index);
+
+    const char& operator[](unsigned int index) const;
+
+    StringByLiuPeng& operator+=(const StringByLiuPeng& s);
+
+    friend StringByLiuPeng operator+(const StringByLiuPeng& stringByLiuPeng1, const StringByLiuPeng& stringByLiuPeng2);
 
     friend std::ostream& operator<<(std::ostream& out, const StringByLiuPeng &stringByLiuPeng);
 
     friend std::istream& operator>>(std::istream& in, StringByLiuPeng &stringByLiuPeng);
-
-    /*String& operator=(char *str);
-    String& operator=(const String& other);
-
-    char& operator[](unsigned int index);
-    const char& operator[](unsigned int index) const;
-
-    friend String operator+(const String& s1, const String& s2);
-
-    String& operator+=(const String& s);
-
-    friend ostream& operator<<(ostream& out, const String& s);
-    friend istream& operator>>(istream& in, String& s);*/
-
-
-
-
+    
 private:
 
     char *str_;

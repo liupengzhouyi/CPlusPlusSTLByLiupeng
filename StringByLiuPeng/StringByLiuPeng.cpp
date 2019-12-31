@@ -91,5 +91,36 @@ std::istream &operator>>(std::istream &in, StringByLiuPeng &stringByLiuPeng) {
     stringByLiuPeng.str_ = new char[len];
     memset(stringByLiuPeng.str_, 0, len);
     strcpy(stringByLiuPeng.str_, buffer);
+    // delete(buffer);
     return in;
+}
+
+char &StringByLiuPeng::operator[](unsigned int index) {
+    return const_cast<char&>(static_cast<const StringByLiuPeng&>(*this)[index]);
+}
+
+const char &StringByLiuPeng::operator[](unsigned int index) const {
+    return this->str_[index];
+}
+
+StringByLiuPeng operator+(const StringByLiuPeng &stringByLiuPeng1, const StringByLiuPeng &stringByLiuPeng2) {
+    int len = strlen(stringByLiuPeng1.str_) + strlen(stringByLiuPeng2.str_) + 1;
+    char *newStr = new char[len];
+    memset(newStr, 0, len);
+    strcpy(newStr, stringByLiuPeng1.str_);
+    strcat(newStr, stringByLiuPeng2.str_);
+    return newStr;
+}
+
+StringByLiuPeng &StringByLiuPeng::operator+=(const StringByLiuPeng &s) {
+    int len = strlen(s.str_) + strlen(this->str_) + 1;
+    char *tempStr = new char[len];
+    memset(tempStr, 0, len);
+    strcpy(tempStr, this->str_);
+    strcat(tempStr, s.str_);
+    delete [] this->str_;
+    this->str_ = new char[len];
+    strcpy(this->str_, tempStr);
+    delete[] tempStr;
+    return *this;
 }
