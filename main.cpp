@@ -3,11 +3,24 @@
 #include "Function/strlen/AboutStrlen.h"
 #include "Function/memset/AboutMemset.h"
 #include "Function/bind/AboutBind.h"
+#include "Function/auto/AboutAuto.h"
+#include "Function/for/AboutFor.h"
 
 int main() {
-    palyInAboutBind();
+    //palyInAboutBind();
 
-    std::cout << "Hello, World!" << std::endl;
+    // 初始化
+    initInAuto();
+
+    //auto number = getReturnInAuto();
+
+    //返回值
+    //std::cout << number << std::endl;
+
+
+    testInFor();
+
+    /*std::cout << "Hello, World!" << std::endl;
 
     StringByLiuPeng * stringByLiuPeng;
 
@@ -30,6 +43,8 @@ int main() {
     StringByLiuPeng stringByLiuPeng2("123");
 
     stringByLiuPeng2 += stringByLiuPeng1;
-    std::cout << stringByLiuPeng2 << std::endl;
+    std::cout << stringByLiuPeng2 << std::endl;*/
+
+
     return 0;
 }

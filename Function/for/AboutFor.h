@@ -1,0 +1,12 @@
+//
+// Created by 刘鹏 on 2019/12/31.
+//
+
+#ifndef CPLUSPLUSSTLBYLIUPENG_ABOUTFOR_H
+#define CPLUSPLUSSTLBYLIUPENG_ABOUTFOR_H
+
+void testInFor();
+
+
+
+#endif //CPLUSPLUSSTLBYLIUPENG_ABOUTFOR_H
