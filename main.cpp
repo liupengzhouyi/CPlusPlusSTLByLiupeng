@@ -2,8 +2,11 @@
 #include "StringByLiuPeng/StringByLiuPeng.h"
 #include "Function/strlen/AboutStrlen.h"
 #include "Function/memset/AboutMemset.h"
+#include "Function/bind/AboutBind.h"
 
 int main() {
+    palyInAboutBind();
+
     std::cout << "Hello, World!" << std::endl;
 
     StringByLiuPeng * stringByLiuPeng;
