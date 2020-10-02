@@ -1,0 +1,5 @@
+# StringType
+
+* value
+* name
+* typeName

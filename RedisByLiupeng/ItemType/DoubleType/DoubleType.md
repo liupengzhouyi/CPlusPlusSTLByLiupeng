@@ -1,0 +1,5 @@
+# DoubleType
+
+* value
+* name
+* typeName

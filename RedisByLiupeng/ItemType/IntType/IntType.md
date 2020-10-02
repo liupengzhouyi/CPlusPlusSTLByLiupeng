@@ -1,0 +1,5 @@
+# IntType
+
+* value
+* name
+* typeName
