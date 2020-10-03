@@ -33,6 +33,44 @@ private:
 
 public:
     DataStructure();
+
+    bool isNull1() const;
+
+    void setIsNull(bool isNull);
+
+    IntType *getIntType() const;
+
+    void setIntType(IntType *intType);
+
+    DoubleType *getDoubleType() const;
+
+    void setDoubleType(DoubleType *doubleType);
+
+    StringType *getStringType() const;
+
+    void setStringType(StringType *stringType);
+
+    DateType *getDateType() const;
+
+    void setDateType(DateType *dateType);
+
+    DataStructure *getUpIndicator() const;
+
+    void setUpIndicator(DataStructure *upIndicator);
+
+    DataStructure *getDownIndictor() const;
+
+    void setDownIndictor(DataStructure *downIndictor);
+
+    DataStructure *getLifeIndictor() const;
+
+    void setLifeIndictor(DataStructure *lifeIndictor);
+
+    DataStructure *getRightIndictor() const;
+
+    void setRightIndictor(DataStructure *rightIndictor);
+
+
 };
 
 
