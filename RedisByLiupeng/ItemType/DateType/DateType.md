@@ -1,2 +1,5 @@
 # DataType
 
+* value
+* name
+* typeName

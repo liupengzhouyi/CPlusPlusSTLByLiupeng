@@ -96,8 +96,8 @@ tm DateByLiupeng::dateByLiupengToTm() {
     temp.tm_hour=this->getHour();       // 小时，范围从 0 到 23
     temp.tm_mday = this->getDay();      // 一月中的第几天，范围从 1 到 31
     temp.tm_mon=this->getMonth();       // 月，范围从 0 到 11
-    temp.tm_year=this->getYear() - 1900;       // 自 1900 年起的年数
-    temp.tm_wday=this->getWeekday();        // 一周中的第几天，范围从 0 到 6，从星期日算起
+    temp.tm_year=this->getYear() - 1900;// 自 1900 年起的年数
+    temp.tm_wday=this->getWeekday();    // 一周中的第几天，范围从 0 到 6，从星期日算起
     temp.tm_yday=this->getYearday();    // 一年中的第几天，范围从 0 到 365，从 1 月 1 日算起
     temp.tm_isdst=this->getSeason();    // 夏令时
 
