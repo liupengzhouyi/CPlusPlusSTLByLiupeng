@@ -5,46 +5,25 @@
 #include "Function/bind/AboutBind.h"
 #include "Function/auto/AboutAuto.h"
 #include "Function/for/AboutFor.h"
+#include "RedisByLiupeng/ItemType/DateType/DateByLiuPeng/DateByLiupeng.h"
 
 int main() {
-    //palyInAboutBind();
+// current date/time based on current system
+    time_t now = time(0);
 
-    // 初始化
-    initInAuto();
+    tm *ltm = localtime(&now);
 
-    //auto number = getReturnInAuto();
+    DateByLiupeng dateByLiupeng = DateByLiupeng();
+    dateByLiupeng.tmToDateByLiupeng(ltm);
 
-    //返回值
-    //std::cout << number << std::endl;
+    std::cout << dateByLiupeng.getCHSString() << std::endl;
 
+    std::cout << dateByLiupeng.getENString() << std::endl;
 
-    testInFor();
+    tm newTm = dateByLiupeng.dateByLiupengToTm();
 
-    /*std::cout << "Hello, World!" << std::endl;
-
-    StringByLiuPeng * stringByLiuPeng;
-
-    char *ch = "ghj765k";
-    stringByLiuPeng = new StringByLiuPeng(ch);
-
-    stringByLiuPeng = new StringByLiuPeng("cfvgbhjnkm");
-
-    std::cout << stringByLiuPeng->longth() << std::endl;
-
-    stringByLiuPeng->addStringByLiuPeng("123");
-
-    std::cout << stringByLiuPeng->longth() << std::endl;
-
-    stringByLiuPeng->printString();
-
-    StringByLiuPeng stringByLiuPeng1("h123");
-    std::cout << stringByLiuPeng1 << std::endl;
-
-    StringByLiuPeng stringByLiuPeng2("123");
-
-    stringByLiuPeng2 += stringByLiuPeng1;
-    std::cout << stringByLiuPeng2 << std::endl;*/
-
+    std::string dt = asctime(&newTm);
+    std::cout << "UTC 日期和时间："<< dt << std::endl;
 
     return 0;
 }
