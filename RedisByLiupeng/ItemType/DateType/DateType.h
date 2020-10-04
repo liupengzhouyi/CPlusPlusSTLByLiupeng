@@ -17,7 +17,7 @@ private:
     std::string typeName;
 
 public:
-    const DateByLiupeng &getValue() const;
+    const DateByLiupeng getValue() const;
 
     void setValue(const DateByLiupeng &value);
 

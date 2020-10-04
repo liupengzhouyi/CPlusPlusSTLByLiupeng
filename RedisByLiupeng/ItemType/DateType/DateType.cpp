@@ -4,7 +4,7 @@
 
 #include "DateType.h"
 
-const DateByLiupeng &DateType::getValue() const {
+const DateByLiupeng DateType::getValue() const {
     return value;
 }
 

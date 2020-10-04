@@ -68,7 +68,7 @@ public:
 
     tm dateByLiupengToTm();
 
-    std::string getCHSString();
+    std::string getCHSString() const;
 
     std::string getENString();
 };

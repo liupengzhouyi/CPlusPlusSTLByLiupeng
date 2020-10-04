@@ -14,18 +14,14 @@
 using namespace std;
 int main() {
 
-
-
     std::vector<std::string> clunmName;
     clunmName.push_back("ID");
     clunmName.push_back("name");
     clunmName.push_back("userName");
     clunmName.push_back("passwordValue");
 
-    
-    
     std::vector<std::string> typeName;
-    typeName.push_back("int");
+    typeName.push_back("string");
     typeName.push_back("string");
     typeName.push_back("string");
     typeName.push_back("string");
@@ -60,68 +56,161 @@ int main() {
     informationIV.push_back("1234564");
     list.push_back(informationIV);
 
+    DataStructure *head = nullptr;
+
     for (std::vector<std::string> item : list) {
-        for (std::string value : item) {
+        DataStructure *dataStructure = new DataStructure();
+        if (head == nullptr) {
+            head = dataStructure;
+        } else {
+            DataStructure *p = head;
+            while (p->getDownIndictor() != nullptr) {
+                p = p->getDownIndictor();
+                std::cout << "--" << std::endl;
+            }
+            p->setDownIndictor(dataStructure);
+            dataStructure->setUpIndicator(p);
+        }
+        DataStructure *temp = dataStructure;
+        for (int i = 0; i < item.size(); i++) {
+            DataStructure *tempDataStructure = new DataStructure();
+            temp->setRightIndictor(tempDataStructure);
+            tempDataStructure->setLifeIndictor(temp);
+            temp = tempDataStructure;
+        }
+
+        temp = dataStructure;
+        for (std::string value : typeName) {
+            if (value == "int") {
+                IntType *intType = new IntType();
+                intType->setTypeName(value);
+                temp->setIntType(intType);
+            }
+            if (value == "double") {
+                DoubleType *doubleType = new DoubleType();
+                doubleType->setTypeName(value);
+                temp->setDoubleType(doubleType);
+            }
+            if (value == "string") {
+                StringType *stringType = new StringType();
+                stringType->setTypeName(value);
+                temp->setStringType(stringType);
+            }
+            if (value == "date") {
+                DateType *dateType = new DateType();
+                dateType->setTypeName(value);
+                temp->setDateType(dateType);
+            }
+            temp = temp->getRightIndictor();
             std::cout << value << " ";
         }
         std::cout << std::endl;
-    }
-    
-
-
-
-// current date/time based on current system
-/*
-
-    DataStructure *p1 = new DataStructure();
-    IntType *intType = new IntType();
-    intType->setValue(1);
-    intType->setName("ID");
-    intType->setTypeName("int");
-    p1->setIntType(intType);
-
-    DataStructure *p2 = new DataStructure();
-    IntType *intType2 = new IntType();
-    intType2->setValue(2);
-    intType2->setName("ID");
-    intType2->setTypeName("int");
-    p2->setIntType(intType2);
-
-    p1->setRightIndictor(p2);
-    p2->setLifeIndictor(p1);
-
-
-    DataStructure * temp = p1;
-    while (temp->getRightIndictor() != nullptr) {
-        if (temp->getIntType() != nullptr) {
-            std::cout << temp->getIntType()->getValue() << std::endl;
+        temp = dataStructure;
+        for (std::string value : clunmName) {
+            if (temp->getIntType() != nullptr) {
+                temp->getIntType()->setName(value);
+            }
+            if (temp->getStringType() != nullptr) {
+                temp->getStringType()->setName(value);
+            }
+            if (temp->getDoubleType() != nullptr) {
+                temp->getDoubleType()->setName(value);
+            }
+            if (temp->getDateType() != nullptr) {
+                temp->getDateType()->setName(value);
+            }
+            temp = temp->getRightIndictor();
+            std::cout << value << " ";
         }
-        if (temp->getDoubleType() != nullptr) {
-            std::cout << temp->getDoubleType()->getValue() << std::endl;
+        std::cout << std::endl;
+        temp = dataStructure;
+        for (std::string value : item) {
+            if (temp->getIntType() != nullptr) {
+                temp->getIntType()->setValue(std::stoi(value));
+            }
+            if (temp->getStringType() != nullptr) {
+                temp->getStringType()->setValue(value);
+            }
+            if (temp->getDoubleType() != nullptr) {
+                temp->getDoubleType()->setValue(std::stod(value));
+            }
+            temp = temp->getRightIndictor();
+            std::cout << value << " ";
+        }
+        std::cout << std::endl;
+
+        temp = dataStructure;
+        do {
+            if (temp->getIntType() != nullptr) {
+                std::cout << temp->getIntType()->getTypeName() << " ";
+                std::cout << temp->getIntType()->getName() << " ";
+                std::cout << temp->getIntType()->getValue();
+            }
+            if (temp->getStringType() != nullptr) {
+                std::cout << temp->getStringType()->getTypeName() << " ";
+                std::cout << temp->getStringType()->getName() << " ";
+                std::cout << temp->getStringType()->getValue();
+            }
+            if (temp->getDoubleType() != nullptr) {
+                std::cout << temp->getDoubleType()->getTypeName() << " ";
+                std::cout << temp->getDoubleType()->getName() << " ";
+                std::cout << temp->getDoubleType()->getValue();
+            }
+            if (temp->getDateType() != nullptr) {
+                std::cout << temp->getDateType()->getTypeName() << " ";
+                std::cout << temp->getDateType()->getName() << " ";
+                std::cout << temp->getDateType()->getValue().getCHSString();
+            }
+            std::cout << std::endl;
+            temp = temp->getRightIndictor();
+        } while (temp->getRightIndictor() != nullptr);
+    }
+
+    DataStructure *temp = head;
+    do {
+        if (temp->getIntType() != nullptr) {
+            std::cout << temp->getIntType()->getTypeName() << " ";
+            std::cout << temp->getIntType()->getName() << " ";
+            std::cout << temp->getIntType()->getValue();
         }
         if (temp->getStringType() != nullptr) {
-            std::cout << temp->getStringType()->getValue() << std::endl;
+            std::cout << temp->getStringType()->getTypeName() << " ";
+            std::cout << temp->getStringType()->getName() << " ";
+            std::cout << temp->getStringType()->getValue();
+        }
+        if (temp->getDoubleType() != nullptr) {
+            std::cout << temp->getDoubleType()->getTypeName() << " ";
+            std::cout << temp->getDoubleType()->getName() << " ";
+            std::cout << temp->getDoubleType()->getValue();
         }
         if (temp->getDateType() != nullptr) {
-            DateByLiupeng l = temp->getDateType()->getValue();
-            std::cout << l.getCHSString() << std::endl;
+            std::cout << temp->getDateType()->getTypeName() << " ";
+            std::cout << temp->getDateType()->getName() << " ";
+            std::cout << temp->getDateType()->getValue().getCHSString();
         }
-        temp = temp->getRightIndictor();
-    }
+        std::cout << std::endl;
+        temp = temp->getDownIndictor();
+    } while (temp->getDownIndictor() != nullptr);
     if (temp->getIntType() != nullptr) {
-        std::cout << temp->getIntType()->getValue() << std::endl;
-    }
-    if (temp->getDoubleType() != nullptr) {
-        std::cout << temp->getDoubleType()->getValue() << std::endl;
+        std::cout << temp->getIntType()->getTypeName() << " ";
+        std::cout << temp->getIntType()->getName() << " ";
+        std::cout << temp->getIntType()->getValue();
     }
     if (temp->getStringType() != nullptr) {
-        std::cout << temp->getStringType()->getValue() << std::endl;
+        std::cout << temp->getStringType()->getTypeName() << " ";
+        std::cout << temp->getStringType()->getName() << " ";
+        std::cout << temp->getStringType()->getValue();
+    }
+    if (temp->getDoubleType() != nullptr) {
+        std::cout << temp->getDoubleType()->getTypeName() << " ";
+        std::cout << temp->getDoubleType()->getName() << " ";
+        std::cout << temp->getDoubleType()->getValue();
     }
     if (temp->getDateType() != nullptr) {
-        DateByLiupeng l = temp->getDateType()->getValue();
-        std::cout << l.getCHSString() << std::endl;
+        std::cout << temp->getDateType()->getTypeName() << " ";
+        std::cout << temp->getDateType()->getName() << " ";
+        std::cout << temp->getDateType()->getValue().getCHSString();
     }
-*/
 
     return 0;
 }

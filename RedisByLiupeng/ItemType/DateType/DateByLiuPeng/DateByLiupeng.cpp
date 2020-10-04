@@ -104,7 +104,7 @@ tm DateByLiupeng::dateByLiupengToTm() {
     return temp;
 }
 
-std::string DateByLiupeng::getCHSString() {
+std::string DateByLiupeng::getCHSString() const {
     std::string date =
             std::to_string(this->getYear()) + "-" + std::to_string(this->getMonth()+1) + "-" + std::to_string(this->getDay());
     std::string time =
