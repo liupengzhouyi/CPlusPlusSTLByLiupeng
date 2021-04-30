@@ -4,7 +4,7 @@
 
 #ifndef CPLUSPLUSSTLBYLIUPENG_ABOUTMEMSET_H
 #define CPLUSPLUSSTLBYLIUPENG_ABOUTMEMSET_H
-
+#include<cstring>
 
 
 // 一个char a[20]清零, 一定是 memset(a, 0, 20)
