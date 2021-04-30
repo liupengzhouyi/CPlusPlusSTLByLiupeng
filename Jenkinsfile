@@ -11,6 +11,8 @@ pipeline {
                 git 'https://github.com/liupengzhouyi/CPlusPlusSTLByLiupeng.git'
                 // sh 'mkdir build'
                 sh script:'''
+                    rm -rf build
+                    mkdir build
                     echo "This is start $(pwd)"
                     cd build
                     echo "This is $(pwd)"
