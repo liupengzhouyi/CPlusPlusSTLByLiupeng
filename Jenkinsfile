@@ -26,10 +26,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'python3 test.py'
                 sh script:'''
                     echo "This is start $(pwd)"
-                    './dataPipeline'
+                    './CPlusPlusSTLByLiupeng'
                     echo "This is $(pwd)"
                 '''
             }
