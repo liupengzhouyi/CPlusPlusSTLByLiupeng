@@ -4,7 +4,7 @@
 
 #ifndef CPLUSPLUSSTLBYLIUPENG_ABOUTSTRLEN_H
 #define CPLUSPLUSSTLBYLIUPENG_ABOUTSTRLEN_H
-
+#include<cstring>
 void palyInStrlen();
 
 
