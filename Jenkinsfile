@@ -1,9 +1,5 @@
 pipeline {
     agent any
-//     agent {
-//         label 'cpp'
-//     }
-
     stages {
         stage('Build') {
             steps {
