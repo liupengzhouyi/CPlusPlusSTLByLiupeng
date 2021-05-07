@@ -27,6 +27,7 @@ pipeline {
             steps {
                 echo 'Testing...'
                 sh script:'''
+                    cd build
                     echo "This is start $(pwd)"
                     './CPlusPlusSTLByLiupeng'
                     echo "This is $(pwd)"
