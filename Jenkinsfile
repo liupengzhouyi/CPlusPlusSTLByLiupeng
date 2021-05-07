@@ -11,6 +11,8 @@ pipeline {
                 git 'https://github.com/liupengzhouyi/CPlusPlusSTLByLiupeng.git'
                 // sh 'mkdir build'
                 sh script:'''
+                    rm -rf build
+                    mkdir build
                     echo "This is start $(pwd)"
                     cd build
                     echo "This is $(pwd)"
@@ -24,10 +26,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'python3 test.py'
                 sh script:'''
                     echo "This is start $(pwd)"
-                    './dataPipeline'
+                    './CPlusPlusSTLByLiupeng'
                     echo "This is $(pwd)"
                 '''
             }

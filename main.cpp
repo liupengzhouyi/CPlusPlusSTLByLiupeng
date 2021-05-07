@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include <cstring>
 #include "StringByLiuPeng/StringByLiuPeng.h"
 #include "Function/strlen/AboutStrlen.h"
 #include "Function/memset/AboutMemset.h"
