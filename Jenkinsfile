@@ -18,7 +18,7 @@ pipeline {
                     echo "This is $(pwd)"
                     cmake ..
                     ls -l
-                    make -j4
+                    make
                     ls -l
                 '''
             }
