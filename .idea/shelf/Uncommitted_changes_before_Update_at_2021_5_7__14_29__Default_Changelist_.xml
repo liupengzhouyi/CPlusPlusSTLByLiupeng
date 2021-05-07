@@ -1,0 +1,109 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]" date="1620368957017" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/5/7, 14:29 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/Function/strlen/AboutStrlen.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/AboutStrlen.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/Function/for/AboutFor.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/AboutFor.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/RedisByLiupeng/ItemType/DoubleType/DoubleType.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/DoubleType.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CPlusPlusSTLByLiupeng" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/CPlusPlusSTLByLiupeng" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/main.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/main.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/3.20.1/CompilerIdC/CMakeCCompilerId.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/CMakeCCompilerId.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/Function/decltype/AboutDecltype.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/AboutDecltype.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/Function/auto/AboutAuto.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/AboutAuto.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/Function/strcat/AboutStrcat.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/AboutStrcat.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/RedisByLiupeng/test/readFlie.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/readFlie.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/3.20.1/CompilerIdCXX/CMakeCXXCompilerId.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/CMakeCXXCompilerId.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/Function/memset/AboutMemset.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/AboutMemset.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/RedisByLiupeng/ItemType/DateType/DateByLiuPeng/DateByLiupeng.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/DateByLiupeng.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/RedisByLiupeng/ItemType/DateType/DateType.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/DateType.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/RedisByLiupeng/ItemType/IntType/IntType.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/IntType.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/RedisByLiupeng/ItemType/StringType/StringType.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/StringType.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/3.20.1/CMakeDetermineCompilerABI_CXX.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/CMakeDetermineCompilerABI_CXX.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/3.20.1/CMakeDetermineCompilerABI_C.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/CMakeDetermineCompilerABI_C.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/StringByLiuPeng/StringByLiuPeng.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/StringByLiuPeng.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/RedisByLiupeng/DataStructure/DataStructure.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/DataStructure.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/CPlusPlusSTLByLiupeng.dir/Function/bind/AboutBind.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_5_7,_14_29_[Default_Changelist]/AboutBind.cpp.o" />
+  </binary>
+</changelist>
