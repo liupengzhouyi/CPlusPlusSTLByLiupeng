@@ -15,6 +15,7 @@
 using namespace std;
 int main() {
 
+    std::cout << "Hello World!" << std::endl;
     std::vector<std::string> clunmName;
     clunmName.push_back("ID");
     clunmName.push_back("name");
